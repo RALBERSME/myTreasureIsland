@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.split {
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#cat {
+  position: absolute;
+  bottom: 150px;
+  left: 0;
+  transform: translateX(-100px) translateY(-0px) rotate(-0deg);
+  animation: catRun 8s 0s infinite;
+}
+@keyframes catRun {
+  0% {
+    transform: translateX(-100px) translateY(-0px) rotate(-0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(800px) translateY(-150px) rotate(-deg);
+    opacity: 1;
+  }
+  60% {
+    transform: translateX(800px) translateY(-150px) rotate(-25deg);
+    opacity: 1;
+  }
+  65% {
+    transform: translateX(860px) translateY(-250px) rotate(-35deg);
+    opacity: 1;
+  }
+  70% {
+    transform: translateX(880px) translateY(-350px) rotate(-35deg);
+    opacity: 1;
+  }
+  75% {
+    transform: translateX(880px) translateY(-470px) rotate(-35deg);
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(900px) translateY(-570px) rotate(-35deg);
+    opacity: 1;
+  }
+  85% {
+    transform: translateX(960px) translateY(-580px) rotate(-15deg);
+    opacity: 1;
+  }
+  95% {
+    transform: translateX(1040px) translateY(-830px) rotate(-5deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(1000px) translateY(-830px) rotate(-5deg);
+    opacity: 0;
+  }
+}
+
+.btn {
+  appearance: none;
+  background-color: rgb(249, 233, 129);
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: rgb(240, 234, 197) 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 5rem;
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+  margin-top: 7.5%;
+  outline: none;
+  padding: 3rem 5rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:hover {
+  background-color: rgb(249, 233, 129);
+  box-shadow: #a8400c 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.btn:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .btn {
+    font-size: 1.5rem;
+    padding: 0.75rem 2rem;
+  }
+}
+
+#eye {
+  border-bottom-right-radius: 40%;
+}
+.right {
+  font-size: 1.25rem;
+  margin-top: -2.5%;
+}
+#first {
+  color: rgb(71, 59, 237);
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+hr {
+  border-top: 5px dotted rgb(71, 59, 237);
+  width: 30%;
+  margin-left: 35%;
+}
