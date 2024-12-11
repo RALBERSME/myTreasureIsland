@@ -14,7 +14,7 @@ body {
 }
 .split {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 3fr;
 }
 .search {
   font-size: 2rem;
