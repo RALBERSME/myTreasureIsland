@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Caveat", cursive;
+  background: whitesmoke;
+  background-image: url(https://cdn.pixabay.com/photo/2022/05/26/02/34/emojis-7221727_640.png);
+  position: relative;
+  overflow: scroll;
+}
+section {
+  height: 195vh;
+}
+.intro {
+  font-size: 1.75rem;
+  margin: 2.5%;
+  text-align: center;
+  background-color: rgba(240, 248, 255, 0.742);
+  border-radius: 10px;
+  padding: 15px;
+}
+.statista {
+  margin: 2.5%;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(240, 248, 255, 0.742);
+  border-radius: 10px;
+}
+.hints {
+  margin: 2.5%;
+  text-align: center;
+  font-size: 1.75rem;
+  background-color: rgba(240, 248, 255, 0.742);
+  border-radius: 10px;
+}
+.hints ul li {
+  list-style: none;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+.helpIntro,
+.help,
+.outro {
+  margin: 2.5%;
+  text-align: center;
+  font-size: 1.75rem;
+  background-color: rgba(240, 248, 255, 0.742);
+  border-radius: 10px;
+}
+
+.help li {
+  list-style: none;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: dodgerblue;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+a:hover {
+  color: orangered;
+}
+
+#hr {
+  margin-left: 48%;
+  height: 15px;
+  border-radius: 50%;
+  aspect-ratio: 5;
+  --_g: no-repeat radial-gradient(farthest-side, dodgerblue 94%, dodgerblue);
+  background: var(--_g), var(--_g), var(--_g), var(--_g);
+  background-size: 20% 100%;
+  animation: l40-1 0.75s infinite alternate, l40-2 1.5s infinite alternate;
+}
+@keyframes l40-1 {
+  0%,
+  10% {
+    background-position: 0 0, 0 0, 0 0, 0 0;
+  }
+  33% {
+    background-position: 0 0, calc(100% / 3) 0, calc(100% / 3) 0,
+      calc(100% / 3) 0;
+  }
+  66% {
+    background-position: 0 0, calc(100% / 3) 0, calc(2 * 100% / 3) 0,
+      calc(2 * 100% / 3) 0;
+  }
+  90%,
+  100% {
+    background-position: 0 0, calc(100% / 3) 0, calc(2 * 100% / 3) 0, 100% 0;
+  }
+}
+@keyframes l40-2 {
+  0%,
+  49.99% {
+    transform: scale(1);
+  }
+  50%,
+  100% {
+    transform: scale(-1);
+  }
+}
