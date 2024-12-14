@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Caveat", cursive;
+  background: black;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-weight: 400;
+  font-style: normal;
+}
+.split {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+.btns {
+  margin-top: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.btn {
+  appearance: none;
+  background-color: rgb(82, 165, 233);
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: rgb(186, 229, 240) 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 5rem;
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+  margin: 0;
+  outline: none;
+  padding: 3rem 5rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  animation: getButton 7s forwards;
+}
+
+.btn:hover {
+  background-color: rgb(146, 200, 244);
+  box-shadow: #c8f71e 0 -6px 8px inset;
+  transform: scale(0.95);
+}
+
+.btn:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .btn {
+    font-size: 1.5rem;
+    padding: 0.75rem 2rem;
+  }
+}
+div.gallery {
+  border: 1px solid #ccc;
+  margin-left: 2.5%;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 80%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/********************************/
+/* some convenient global rules */
+/********************************/
+[outlines="1"] * {
+  outline: 1px dashed;
+}
+
+/*
+    TIP: when in 3D view your objects have jagged edges,
+         try using 'outline: 1px solid transparent' on your 3D elements
+         and they will probably get smooth edges... Layman's anti-aliassing!!
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* responsive base font size using y = mx + b 'y-intercept form' => y = 0.00625x + 12 */
+html {
+  font-size: calc(0.625vmin + 0.75rem);
+} /* (320,14)(1280,20) */
+body {
+  font-size: 1rem;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* Simple page banding attributes for use in 'Landing Page' layout */
+[band],
+[block] {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+[band] {
+  flex-flow: row wrap;
+  width: 100%;
+} /* row of columns, full viewport width */
+[block] {
+  flex-flow: column wrap;
+} /* column of rows */
+
+[block] [block] {
+  width: 100%;
+} /* block child blocks at full parent width */
+
+[padded] {
+  /*
+    responsive spacing y=mx+b, use at top level [band]/[block] for nice page spacing
+
+    top/bottom padding: p1(320,16) p2(1920, 72) => 0.035x + 4.8  => vary from 16 to  72px
+    left/right padding: p1(320, 8) p2(1920,320) => 0.195x - 54.4 => vary from  8 to 320px
+*/
+  padding: calc(3.5vh + 4.8px) calc(19.5vw - 54.4px);
+}
+
+/* prevent/enable text selection, also convenient for inadverted user multi-clicks */
+[no-select],
+[noselect] {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+[select] {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+/* Absolutely, positively hide the element from view and voice-readers */
+[gone],
+.gone,
+[data-gone="1"],
+[hide],
+.hidden {
+  display: none;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  z-index: -999999;
+  top: -999999px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  min-height: 0;
+  min-width: 0;
+  max-height: 0;
+  max-width: 0;
+} /* also set <tag aria-hidden="true"> to be complete */
+
+/**********************************/
+/* Demo page layout, this 'n that */
+/**********************************/
+
+.body {
+  font-family: Inconsolata, monospace;
+  font-weight: 600;
+}
+
+.threed-child {
+  font-size: 3em;
+  width: 6em;
+  aspect-ratio: 9/16;
+  border-radius: 0.5em;
+  background-color: hsl(218.5, 79.2%, 66.1%, 0.5); /* CornflowerBlue */
+  /*    color: hsl(48,100%,93.1%); /* CornSilk */
+
+  /* GMD elevation 1dp */
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.threed-child:hover {
+  transform: scale(1.01);
+
+  z-index: 1; /* on top of the rest, HTML default = 0 */
+  cursor: pointer;
+
+  /* GMD elevation 3dp */
+  box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.2),
+    0px 3px 4px 0px rgba(0, 0, 0, 0.14), 0px 1px 8px 0px rgba(0, 0, 0, 0.12);
+}
+.threed-child:active {
+  /* Mouse/touch 'click' action */
+  transform: scale(1);
+}
+
+/***********************/
+/* animated 3D view ON */
+/***********************/
+/* When <body threed="1"> then '3D view' will be active */
+
+/*
+    Firefox doesn't react well to toggling 3D on/off and occasionally fails to refresh the viewport.
+    Resize the browser window or toggle 'element outlines' to refresh and the circle will re-appear.
+
+    Chrome and Edge work fine.
+*/
+
+/* Enable 3D viewport */
+/*--------------------*/
+.body[threed="1"] {
+  /* circumvents 'overflow jitter' in 3D when parent doesn't fit the viewport height */
+  overflow-y: scroll;
+}
+
+[threed="1"] .threed-parent {
+  perspective: 800px;
+  perspective-origin: center calc(50% - 20rem); /* the higher the rem, the higher the tilt */
+  transition: all 0.5s ease-in-out;
+}
+[threed="1"] .threed-child {
+  transform-style: preserve-3d;
+  outline: 1px solid transparent;
+
+  --rotateX: 90deg;
+  --rotateY: 0deg;
+  --rotateZ: 0deg;
+}
+[threed="1"] .threed-child:hover {
+  --rotateX: 85deg;
+  --rotateY: 0deg;
+  --rotateZ: 0deg;
+}
+
+/* the '3D' shadow */
+/*-----------------*/
+[threed="1"] .threed-parent {
+  margin-top: -10rem; /* move the parent a bit up */
+  filter: drop-shadow(0px 150px 7px rgba(0, 0, 0, 0.5));
+  /* That's it, really! */
+}
+
+/* animated view */
+/*---------------*/
+[threed="1"] .threed-child {
+  -webkit-animation: rotate 30s infinite linear;
+  animation: rotate 30s infinite linear;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    transform: rotateX(var(--rotateX)) rotateY(var(--rotateY))
+      rotateZ(var(--rotateZ)) rotate(0deg);
+  }
+  to {
+    transform: rotateX(var(--rotateX)) rotateY(var(--rotateY))
+      rotateZ(var(--rotateZ)) rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateX(var(--rotateX)) rotateY(var(--rotateY))
+      rotateZ(var(--rotateZ)) rotate(0deg);
+  }
+  to {
+    transform: rotateX(var(--rotateX)) rotateY(var(--rotateY))
+      rotateZ(var(--rotateZ)) rotate(360deg);
+  }
+}
+
+#turn {
+  transform: rotate(180deg);
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.gallery:hover {
+  background-color: dodgerblue;
+}

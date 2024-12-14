@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Caveat", cursive;
+  background: black;
+  position: relative;
+  overflow: hidden;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.btns {
+  margin-top: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+.btn {
+  appearance: none;
+  background-color: rgb(82, 165, 233);
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: rgb(186, 229, 240) 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 5rem;
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+  margin: 0;
+  outline: none;
+  padding: 3rem 5rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  animation: getButton 7s forwards;
+}
+
+.btn:hover {
+  background-color: rgb(146, 200, 244);
+  box-shadow: #c8f71e 0 -6px 8px inset;
+  transform: scale(0.95);
+}
+
+.btn:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .btn {
+    font-size: 1.5rem;
+    padding: 0.75rem 2rem;
+  }
+}
+
+.cards {
+  margin: 5%;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+}
+:root {
+  --bg: #111111;
+  --card-size: 360px;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+@layer base, card;
+
+@layer base {
+  body {
+    font-family: "Montserrat", sans-serif;
+    color: var(--color);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+
+    background: var(--bg);
+  }
+
+  body:before {
+    content: "";
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-image: radial-gradient(
+      rgba(255 255 255 / 0.3) 1px,
+      transparent 0
+    );
+    background-size: 34px 34px;
+    mask: linear-gradient(-20deg, transparent 40%, white);
+    top: 0;
+    transform-style: flat;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .ric-link {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+  }
+
+  a svg {
+    width: 60px;
+    height: auto;
+
+    transition: transform 0.2s, filter 0.2s;
+  }
+
+  a svg:hover {
+    transform: scale(1.2) rotate(-10deg);
+    filter: drop-shadow(rgba(255 255 255 / 0.2) 0 2px 10px);
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@layer cards {
+  .card {
+    color: canvas;
+    background: #1c1f2b;
+    width: var(--card-size);
+    aspect-ratio: 4 / 4;
+    position: relative;
+
+    padding: 10px 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .card::after,
+  .card::before {
+    content: "";
+    position: absolute;
+    background-image: conic-gradient(
+      from var(--angle),
+      rgb(5, 78, 104),
+      rgb(66, 155, 21),
+      rgb(142, 155, 21)
+    );
+    inset: 0;
+    margin: -16px;
+
+    z-index: -1;
+    border-radius: 14px;
+    animation: spin 4s linear infinite;
+  }
+
+  .card::after {
+    filter: blur(1.5rem);
+  }
+
+  @keyframes spin {
+    from {
+      --angle: 0deg;
+    }
+    to {
+      --angle: 360deg;
+    }
+  }
+}
+
+#link {
+  text-decoration: none;
+  color: white;
+}
+#link:hover {
+  color: yellowgreen;
+}
+
+hr {
+  border-top: 3px dotted white;
+  width: 30%;
+  margin-left: 35%;
+}

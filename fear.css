@@ -206,3 +206,9 @@ img {
 .fast {
   animation: catchEye 2s 0s linear infinite;
 }
+
+marquee {
+  background-color: rgb(243, 70, 7);
+  font-weight: bold;
+  font-size: 1rem;
+}
