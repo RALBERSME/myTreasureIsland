@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Caveat", cursive;
+  background: black;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-weight: 400;
+  font-style: normal;
+}
+.split {
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+}
+.btns {
+  margin-top: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.btn {
+  appearance: none;
+  background-color: rgb(82, 165, 233);
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: rgb(186, 229, 240) 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 5rem;
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+  margin: 0;
+  outline: none;
+  padding: 3rem 5rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  animation: getButton 7s forwards;
+}
+
+.btn:hover {
+  background-color: rgb(146, 200, 244);
+  box-shadow: #c8f71e 0 -6px 8px inset;
+  transform: scale(0.95);
+}
+
+.btn:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .btn {
+    font-size: 1.5rem;
+    padding: 0.75rem 2rem;
+  }
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #000;
+}
+
+.cards-container {
+  position: relative;
+  margin-left: 50px;
+  width: 1600px;
+  height: 690px;
+  overflow: hidden;
+}
+
+.card {
+  position: absolute;
+  width: 190px;
+  height: 690px;
+  overflow: hidden;
+  animation-duration: 0.4s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  left: -250px;
+
+  transition: box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: scale(1.05) rotate(3deg);
+  z-index: 10;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  from {
+    left: -250px;
+  }
+  to {
+    left: var(--end-position);
+  }
+}
+
+.card {
+  animation-name: slide;
+}
+
+#card1 {
+  --end-position: 0px;
+  animation-delay: 0s;
+}
+#card2 {
+  --end-position: 190px;
+  animation-delay: 0.2s;
+}
+#card3 {
+  --end-position: 380px;
+  animation-delay: 0.4s;
+}
+#card4 {
+  --end-position: 570px;
+  animation-delay: 0.6s;
+}
+#card5 {
+  --end-position: 760px;
+  animation-delay: 0.8s;
+}
+#card6 {
+  --end-position: 950px;
+  animation-delay: 1s;
+}
+#card7 {
+  --end-position: 1140px;
+  animation-delay: 1.2s;
+}
+#card8 {
+  --end-position: 1330px;
+  animation-delay: 1.4s;
+}
+#card9 {
+  --end-position: 1520px;
+  animation-delay: 1.6s;
+}
+#card10 {
+  --end-position: 1710px;
+  animation-delay: 1.8s;
+}
+
+@media (max-width: 1920px) {
+  .cards-container {
+    transform: scale(0.9);
+    transform-origin: top left;
+  }
+}
+
+@media (max-width: 1600px) {
+  .cards-container {
+    transform: scale(0.8);
+    transform-origin: top left;
+  }
+}
+
+@media (max-width: 1280px) {
+  .cards-container {
+    transform: scale(0.7);
+    transform-origin: top left;
+  }
+}
+
+@media (max-width: 1024px) {
+  .cards-container {
+    transform: scale(0.6);
+    transform-origin: top left;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    transform: scale(0.5);
+    transform-origin: top left;
+  }
+}
+
+.loader {
+  margin-left: 65%;
+  width: 60px;
+  aspect-ratio: 1;
+  background: linear-gradient(pink 0 0) bottom/100% 0% no-repeat #eab4f9;
+  -webkit-mask: radial-gradient(circle at 60% 65%, #000 62%, #0000 65%) top left,
+    radial-gradient(circle at 40% 65%, #000 62%, #0000 65%) top right,
+    linear-gradient(to bottom left, #000 42%, #0000 43%) bottom left,
+    linear-gradient(to bottom right, #000 42%, #0000 43%) bottom right;
+  -webkit-mask-size: 50% 50%;
+  -webkit-mask-repeat: no-repeat;
+  animation: l19 2s infinite linear;
+}
+@keyframes l19 {
+  90%,
+  100% {
+    background-size: 100% 100%;
+  }
+}
+.links {
+  position: absolute;
+  top: 80%;
+  left: 15%;
+}
+.links a {
+  color: #eab4f9;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.links a:hover {
+  color: pink;
+}
