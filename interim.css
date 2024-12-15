@@ -41,6 +41,9 @@ h1 {
   background-image: url(https://cdn.pixabay.com/photo/2018/12/06/16/12/birds-3860034_640.jpg);
   background-position: center;
 }
+#next {
+  margin-left: 60%;
+}
 /* HTML: */
 .loader1 {
   display: inline-block;
