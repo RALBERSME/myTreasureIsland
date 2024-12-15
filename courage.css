@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Caveat", cursive;
+  background: black;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-weight: 400;
+  font-style: normal;
+}
+.split {
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+}
+.btns {
+  margin-top: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.btn {
+  appearance: none;
+  background-color: rgb(82, 165, 233);
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: rgb(186, 229, 240) 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 5rem;
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+  margin: 0;
+  outline: none;
+  padding: 3rem 5rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  animation: getButton 7s forwards;
+}
+.btn2 {
+  background-color: rgb(248, 170, 102);
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: rgb(186, 229, 240) 0 -12px 16px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 5rem;
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+  margin: 0;
+  outline: none;
+  padding: 3rem 5rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  transform: scale(0.3);
+}
+.btn2:hover {
+  transform: scale(0.5);
+}
+.btn:hover {
+  background-color: rgb(146, 200, 244);
+  box-shadow: #c8f71e 0 -6px 8px inset;
+  transform: scale(0.95);
+}
+
+.btn:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .btn {
+    font-size: 1.5rem;
+    padding: 0.75rem 2rem;
+  }
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 5%;
+  font-size: 1.5rem;
+}
+.flip-card {
+  background-color: transparent;
+  width: 350px;
+  height: 400px;
+  border: none;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: rgb(252, 152, 64);
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgb(251, 202, 158);
+  color: black;
+  transform: rotateY(180deg);
+  padding: 5px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(252, 152, 64);
+  margin-bottom: 5px;
+}
+.link:hover {
+  background-color: white;
+  color: rgb(252, 152, 64);
+}
+#fish {
+  transform: rotateY(180deg);
+}
