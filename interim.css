@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Caveat", cursive;
+  position: relative;
+  font-size: 2rem;
+  background-color: rgb(251, 226, 37);
+}
+.container {
+  margin: 5%;
+}
+a {
+  text-decoration: none;
+  color: rgb(150, 99, 3);
+  font-weight: bold;
+}
+a:hover {
+  color: orangered;
+}
+li {
+  list-style: circle;
+  margin-left: 35px;
+}
+h1 {
+  text-align: center;
+}
+#topImg {
+  width: 150px;
+  height: 150px;
+  border-radius: 40%;
+  margin-left: 46%;
+}
+.section1 {
+  background-image: url(https://cdn.pixabay.com/photo/2018/12/06/16/12/birds-3860034_640.jpg);
+  background-position: center;
+}
+/* HTML: */
+.loader1 {
+  display: inline-block;
+  height: 30px;
+  aspect-ratio: 4.5;
+  --_g: no-repeat radial-gradient(farthest-side, #000 90%, #0000);
+  background: var(--_g), var(--_g), var(--_g), var(--_g);
+  background-size: 30% 60%;
+  animation: l43 1s infinite linear;
+}
+@keyframes l43 {
+  0% {
+    background-position: calc(0 * 100% / 3) 50%, calc(1 * 100% / 3) 50%,
+      calc(2 * 100% / 3) 50%, calc(3 * 100% / 3) 50%;
+  }
+  16.67% {
+    background-position: calc(0 * 100% / 3) 0, calc(1 * 100% / 3) 50%,
+      calc(2 * 100% / 3) 50%, calc(3 * 100% / 3) 50%;
+  }
+  33.33% {
+    background-position: calc(0 * 100% / 3) 100%, calc(1 * 100% / 3) 0,
+      calc(2 * 100% / 3) 50%, calc(3 * 100% / 3) 50%;
+  }
+  50% {
+    background-position: calc(0 * 100% / 3) 50%, calc(1 * 100% / 3) 100%,
+      calc(2 * 100% / 3) 0, calc(3 * 100% / 3) 50%;
+  }
+  66.67% {
+    background-position: calc(0 * 100% / 3) 50%, calc(1 * 100% / 3) 50%,
+      calc(2 * 100% / 3) 100%, calc(3 * 100% / 3) 0;
+  }
+  83.33% {
+    background-position: calc(0 * 100% / 3) 50%, calc(1 * 100% / 3) 50%,
+      calc(2 * 100% / 3) 50%, calc(3 * 100% / 3) 100%;
+  }
+  100% {
+    background-position: calc(0 * 100% / 3) 50%, calc(1 * 100% / 3) 50%,
+      calc(2 * 100% / 3) 50%, calc(3 * 100% / 3) 50%;
+  }
+}
