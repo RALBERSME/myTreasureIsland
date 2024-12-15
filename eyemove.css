@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  padding: 5px;
+}
+button {
+  background-color: red;
+}
+
+.ball {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  width: 50px;
+  height: 50px;
+  background-color: darkblue;
+  /* box-shadow: 2px 2px 2px 2px darkblue; */
+  border-radius: 50%;
+  /* animation: moveBall3 1.5s 0s linear infinite; */
+}
+
+@keyframes moveBall1 {
+  0% {
+    left: 2.5%;
+    top: 50%;
+  }
+  50% {
+    left: 95%;
+    top: 50%;
+  }
+  100% {
+    left: 2.5%;
+    top: 50%;
+  }
+}
+@keyframes moveBall2 {
+  0% {
+    left: 2.5%;
+    top: 5%;
+  }
+  50% {
+    left: 95%;
+    top: 5%;
+  }
+  100% {
+    left: 2.5%;
+    top: 5%;
+  }
+}
+@keyframes moveBall3 {
+  0% {
+    left: 2.5%;
+    top: 90%;
+  }
+  50% {
+    left: 95%;
+    top: 90%;
+  }
+  100% {
+    left: 2.5%;
+    top: 90%;
+  }
+}
+@keyframes moveBall4 {
+  0% {
+    left: 2.5%;
+    top: 50%;
+  }
+  50% {
+    left: 95%;
+    top: 50%;
+  }
+  100% {
+    top: 50%;
+    left: 45%;
+  }
+}
+.btn {
+  appearance: none;
+  background-color: rgb(82, 165, 233);
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: rgb(186, 229, 240) 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2.5rem;
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.5rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  animation: getButton 7s forwards;
+}
+
+.btn:hover {
+  background-color: rgb(146, 200, 244);
+  box-shadow: #c8f71e 0 -6px 8px inset;
+  transform: scale(0.95);
+}
+
+.btn:active {
+  transform: scale(1.025);
+}
+#modal {
+  position: absolute;
+  top: 5%;
+  left: 35%;
+  padding: 5%;
+  font-size: 1.5rem;
+  width: 980px;
+  height: 850px;
+  border-radius: 5px;
+  background-color: rgb(146, 200, 244);
+}
+.hide {
+  display: none;
+}
