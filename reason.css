@@ -55,7 +55,7 @@ body {
 
 .btn:hover {
   background-color: rgb(146, 200, 244);
-  box-shadow: #c8f71e 0 -6px 8px inset;
+  box-shadow: #c8f71e95 0 -6px 8px inset;
   transform: scale(0.95);
 }
 
@@ -104,7 +104,7 @@ h1 {
 }
 
 .content {
-  background-color: rgb(169, 247, 183);
+  background-color: #e1f88cc7;
   padding: 10px;
   font-size: 1.75rem;
 }
