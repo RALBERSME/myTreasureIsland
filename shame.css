@@ -225,7 +225,7 @@ body {
 }
 .small {
   position: absolute;
-  font-size: 1.25rem;
+  font-size: 1.75rem;
   color: white;
   transform: translateX(220px) translateY(50px);
 }
