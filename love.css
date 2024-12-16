@@ -204,7 +204,7 @@ body {
   margin-left: 65%;
   width: 60px;
   aspect-ratio: 1;
-  background: linear-gradient(pink 0 0) bottom/100% 0% no-repeat #eab4f9;
+  background: linear-gradient(#aa72f8 0 0) bottom/100% 0% no-repeat #eab4f9;
   -webkit-mask: radial-gradient(circle at 60% 65%, #000 62%, #0000 65%) top left,
     radial-gradient(circle at 40% 65%, #000 62%, #0000 65%) top right,
     linear-gradient(to bottom left, #000 42%, #0000 43%) bottom left,
