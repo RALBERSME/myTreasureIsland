@@ -14,7 +14,7 @@ body {
 }
 .split {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 1fr;
 }
 .search {
   font-size: 2rem;
@@ -99,4 +99,10 @@ body {
 }
 #li15 {
   background-color: rgb(82, 82, 25);
+}
+.mapText {
+  position: absolute;
+  top: 80%;
+  left: 7.5%;
+  color: dodgerblue;
 }
