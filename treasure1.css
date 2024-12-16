@@ -102,7 +102,10 @@ body {
 }
 .mapText {
   position: absolute;
-  top: 75%;
+  top: 65%;
   left: 7.5%;
   color: dodgerblue;
+  background-color: beige;
+  padding: 5px;
+  border-radius: 5px;
 }
