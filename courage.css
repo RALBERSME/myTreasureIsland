@@ -78,6 +78,14 @@ body {
 .btn2:hover {
   transform: scale(0.5);
 }
+.btn3 {
+  position: absolute;
+  top: 45%;
+  left: 7%;
+  padding: 10px;
+  background-color: rgb(252, 152, 64);
+  border-radius: 40em;
+}
 .btn:hover {
   background-color: rgb(146, 200, 244);
   box-shadow: #c8f71e 0 -6px 8px inset;
