@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <video id="video">
+      <source src="ship.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
     <div class="intro">
       <span>m</span>
       <span>y</span>
@@ -27,6 +31,10 @@
       <span>n</span>
       <span>d</span>
       <br />
+      <button class="btn" onclick="playSong()">
+        Click here to listen to <br />intro music <br />Fearsome Tipsy Pirates
+        by Sigma Music Art</button
+      ><br />
       <button class="btn" onclick="window.location.href='leiter.html'">
         Click here to start the trip
       </button>
@@ -162,5 +170,6 @@
         </g>
       </svg>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>

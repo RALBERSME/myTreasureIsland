@@ -119,6 +119,7 @@ body {
   font-family: "Caveat", cursive;
   font-weight: 700;
   margin: 0;
+  margin-left: 20px;
   outline: none;
   padding: 3rem 5rem;
   quotes: auto;
@@ -135,7 +136,7 @@ body {
     transform: translateY(-200px) translateX(0);
   }
   100% {
-    transform: translateY(750px) translateX(-390px);
+    transform: translateY(750px) translateX(-650px);
   }
 }
 .btn:hover {
@@ -152,5 +153,23 @@ body {
   .btn {
     font-size: 1.5rem;
     padding: 0.75rem 2rem;
+  }
+}
+
+#video {
+  position: absolute;
+  top: 140%;
+  left: 65%;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  transform: rotateX(-90deg);
+}
+@keyframes showVideo {
+  from {
+    transform: rotateX(-90deg);
+  }
+  to {
+    transform: rotateX(0deg);
   }
 }
