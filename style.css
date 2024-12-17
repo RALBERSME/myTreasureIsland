@@ -173,3 +173,7 @@ body {
     transform: rotateX(0deg);
   }
 }
+
+.hide {
+  display: none;
+}
