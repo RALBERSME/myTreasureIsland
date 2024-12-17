@@ -1,8 +1,5 @@
 let audio = new Audio("pirates.mp3");
 let videoElem = document.getElementById("video");
-function playSong() {
-  audio.play();
-}
 
 function playSong() {
   audio.play();
