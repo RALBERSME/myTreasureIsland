@@ -4,7 +4,7 @@ const messages = [
   `<img
         width="350px"
         height="200px"
-        src="https://cdn.pixabay.com/photo/2024/01/17/04/13/ai-generated-8513521_640.png"
+        src="Images/eden.jpg"
       />
       <p>
         Alles begann mit dem Südenfall im Paradies. So berichtet das Alte
@@ -24,7 +24,7 @@ const messages = [
   <img 
         width="350px"
         height="400px"
-        src="https://cdn.pixabay.com/photo/2016/06/06/15/53/prague-1439696_640.jpg"
+        src="Images/prag.jpg"
       />
   <p>
   Franz Kafka (Schriftsteller  (1883 - 1924), in Prag geboren als Sohn einer bürgerlichen jüdischen KaufmannsfamilieWenn): <br><br> <em>"Wenn das, was im Paradies zerstört worden sein soll, zerstörbar war, dann war es nicht entscheidend; <br>war es aber unzerstörbar, dann leben wir in einem falschen Glauben"</em>.<br><br>Quelle: Kafka, Die Zürauer Aphorismen, entstanden 1917-1918, von Max Brod unter dem Titel "Betrachtungen über Sünde, Hoffnung, Leid und den wahren Weg" veröffentlicht 1931 </p></div>`,
@@ -33,7 +33,7 @@ const messages = [
   `<img
         width="350px"
         height="200px"
-        src="https://cdn.pixabay.com/photo/2024/01/17/04/13/ai-generated-8513521_640.png"
+          src="Images/eden.jpg"
       />
       <p>
         Everything began with the fall of the cross in paradise. The Old Testament tells us about the first parents Adam and Eve. They lived innocently in paradise until the serpent (the devil) seduced them to eat the forbidden fruit from the tree of knowledge. Because of their disobedience (guilt), God expelled them from paradise. The Catholic Church adopted this story and introduced the concept of original sin: every person is born into a universal state of misfortune. According to the teachings of the Church, original sin gives rise to the need for human redemption, which was realized through the incarnation, death on the cross and resurrection of Jesus Christ. One is therefore freed from original sin through baptism and faith in Christ.
@@ -43,7 +43,7 @@ const messages = [
   <img 
         width="350px"
         height="400px"
-        src="https://cdn.pixabay.com/photo/2016/06/06/15/53/prague-1439696_640.jpg"
+         src="Images/prag.jpg"
       />
   <p>
   Franz Kafka (German writer (1883 - 1924), born in Prague as the son of a middle-class Jewish merchant familyIf): <br><br> <em>"If what was supposed to have been destroyed in paradise was destructible, then it was not decisive; <br>but if it was indestructible, then we live in a false belief"</em>.<br><br>Source: Kafka, The Zürau Aphorisms, written in 1917-1918, published by Max Brod under the title "Reflections on Sin, Hope, Suffering and the True Way" in 1931 </p></div>`,

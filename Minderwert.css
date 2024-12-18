@@ -7,7 +7,7 @@
 body {
   font-family: "Caveat", cursive;
   background: whitesmoke;
-  background-image: url(https://cdn.pixabay.com/photo/2022/05/26/02/34/emojis-7221727_640.png);
+  background-image: url(Images/emojibackground.png);
   position: relative;
   overflow: scroll;
 }

@@ -20,9 +20,7 @@ button {
   width: 50px;
   height: 50px;
   background-color: darkblue;
-  /* box-shadow: 2px 2px 2px 2px darkblue; */
   border-radius: 50%;
-  /* animation: moveBall3 1.5s 0s linear infinite; */
 }
 
 @keyframes moveBall1 {
