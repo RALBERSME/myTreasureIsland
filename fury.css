@@ -278,15 +278,15 @@ body {
   }
 }
 
-#turn {
-  transform: rotate(180deg) translateY(-180px) translateX(90px);
-}
-#hate {
+/* #turn {
+  
+} */
+/* #hate {
   transform: translateY(-40px) translateX(70px);
 }
 #bomb {
   transform: translateY(-70px) translateX(60px);
-}
+} */
 a {
   color: white;
   text-decoration: none;
