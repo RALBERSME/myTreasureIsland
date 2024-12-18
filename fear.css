@@ -7,7 +7,7 @@
 }
 body {
   font-family: "Caveat", cursive;
-  background-image: url(https://cdn.pixabay.com/photo/2018/10/28/17/48/river-3779405_640.jpg);
+  background-image: url(Images/river.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
@@ -178,7 +178,7 @@ img {
 }
 
 .ring {
-  content: url("https://cdn.pixabay.com/photo/2022/03/02/15/47/fear-7043428_640.png");
+  content: url("Images/fearedPersons.png");
 }
 
 .ring.outer {
@@ -232,6 +232,7 @@ marquee {
   border-right: 3.5px solid rgb(248, 248, 167);
   margin: -10px;
   padding-top: -10px;
+  transform: rotate(-50deg) translate(-20px, -5px);
   animation: animate 2s infinite;
 }
 
@@ -250,6 +251,7 @@ marquee {
   }
   50% {
     opacity: 1;
+    transform: rotate(-50deg) translate(-20px, -5px);
   }
   100% {
     opacity: 0;

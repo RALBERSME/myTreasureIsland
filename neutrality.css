@@ -117,18 +117,18 @@ a:hover {
   box-sizing: border-box;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
-  background-image: url("https://cdn.pixabay.com/photo/2018/12/18/21/38/dog-3883112_640.jpg");
+  background-image: url("Images/dog-3883112_640.jpg");
   animation: border-transform 6s linear infinite alternate forwards;
   border-radius: 40%;
 }
 .checkbox.scnd + label {
-  background-image: url("https://assets.codepen.io/1462889/sl2.jpg");
+  background-image: url("Images/baby-200760_640.jpg");
 }
 .checkbox.thrd + label {
-  background-image: url("https://cdn.pixabay.com/photo/2017/03/19/10/47/friendship-2156171_640.jpg");
+  background-image: url("Images/friendship-2156171_640.jpg");
 }
 .checkbox.foth + label {
-  background-image: url("https://cdn.pixabay.com/photo/2018/08/12/15/52/horse-3601046_640.jpg");
+  background-image: url("Images/horse-3601046_640.jpg");
 }
 
 .checkbox:checked + label {
@@ -179,7 +179,7 @@ ul li {
   border: 5px solid #8e8f8f;
   background-size: cover;
   background-position: center;
-  background-image: url("https://cdn.pixabay.com/photo/2018/12/18/21/38/dog-3883112_640.jpg");
+  background-image: url("Images/dog-3883112_640.jpg");
   border-radius: 50%;
   box-sizing: border-box;
   font-weight: 900;
@@ -207,13 +207,13 @@ ul li span {
   mix-blend-mode: difference;
 }
 ul li:nth-child(2) {
-  background-image: url("https://cdn.pixabay.com/photo/2013/10/25/13/54/baby-200760_640.jpg");
+  background-image: url("Images/baby-200760_640.jpg");
 }
 ul li:nth-child(3) {
-  background-image: url("https://cdn.pixabay.com/photo/2017/03/19/10/47/friendship-2156171_640.jpg");
+  background-image: url("Images/friendship-2156171_640.jpg");
 }
 ul li:nth-child(4) {
-  background-image: url("https://cdn.pixabay.com/photo/2018/08/12/15/52/horse-3601046_640.jpg");
+  background-image: url("Images/horse-3601046_640.jpg");
 }
 
 .checkbox.frst:checked ~ ul li:nth-child(1) {
@@ -260,7 +260,7 @@ ul li:nth-child(4) {
 #handy {
   position: absolute;
   top: -30%;
-  left: 30%;
+  left: 29%;
   width: 600px;
   transform: rotate(90deg);
 }

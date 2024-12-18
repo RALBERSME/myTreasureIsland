@@ -130,7 +130,7 @@ a:hover {
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  background-image: url(https://cdn.pixabay.com/photo/2020/08/03/14/05/girl-5460168_640.jpg);
+  background-image: url(Images/littlegirl.jpg);
   background-size: cover;
   filter: grayscale(60%);
 }

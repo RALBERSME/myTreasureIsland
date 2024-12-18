@@ -10,7 +10,7 @@ body {
   background: whitesmoke;
   position: relative;
   overflow: hidden;
-  background-image: url(https://cdn.pixabay.com/photo/2024/09/05/15/13/vietnam-9025183_640.jpg);
+  background-image: url(Images/background1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
