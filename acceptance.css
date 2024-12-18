@@ -89,13 +89,13 @@ body {
 .chip:hover {
   transform: scale(1.5) translateX(-50px);
   z-index: 5;
-  background-color: rgb(232, 251, 230);
+  background-color: white;
 }
 .chip2 {
   background-color: rgb(232, 251, 230);
 }
 .chip2:hover {
-  background-color: rgb(248, 214, 220);
+  background-color: rgb(203, 233, 251);
 }
 a {
   color: rgb(244, 121, 13);
