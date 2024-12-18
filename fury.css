@@ -279,10 +279,10 @@ body {
 }
 
 #turn {
-  transform: rotate(180deg) translateY(-200px);
+  transform: rotate(180deg) translateY(-200px) translateX(60px);
 }
 #hate {
-  transform: translateY(-40px);
+  transform: translateY(-40px) translateX(60px);
 }
 #bomb {
   transform: translateY(-70px) translateX(60px);
