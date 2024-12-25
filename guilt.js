@@ -9,7 +9,7 @@ const messages = [
       <p>
         Alles begann mit dem Südenfall im Paradies. So berichtet das Alte
         Testament von den Stammeltern Adam und Eva. Diese lebten unschuldig im
-        Paradies, bis die Schlange (der Teufel) sie verführte, die verbotene
+        Paradies bis die Schlange (der Teufel) sie verführte, die verbotene
         Frucht vom Baum der Erkenntnis zu essen. Aufgrund des Ungehorsams
         (Schuld) vertreibt Gott sie aus dem Paradies. Die katholische Kirche
         übernimmt diese Geschichte und führte das Konzept der Erbschuld ein:
@@ -27,7 +27,7 @@ const messages = [
         src="Images/prag.jpg"
       />
   <p>
-  Franz Kafka (Schriftsteller  (1883 - 1924), in Prag geboren als Sohn einer bürgerlichen jüdischen KaufmannsfamilieWenn): <br><br> <em>"Wenn das, was im Paradies zerstört worden sein soll, zerstörbar war, dann war es nicht entscheidend; <br>war es aber unzerstörbar, dann leben wir in einem falschen Glauben"</em>.<br><br>Quelle: Kafka, Die Zürauer Aphorismen, entstanden 1917-1918, von Max Brod unter dem Titel "Betrachtungen über Sünde, Hoffnung, Leid und den wahren Weg" veröffentlicht 1931 </p></div>`,
+  Franz Kafka (Schriftsteller  (1883 - 1924), in Prag geboren als Sohn einer bürgerlichen jüdischen Kaufmannsfamilie): <br><br> <em>"Wenn das, was im Paradies zerstört worden sein soll, zerstörbar war, dann war es nicht entscheidend; <br>war es aber unzerstörbar, dann leben wir in einem falschen Glauben"</em>.<br><br>Quelle: Kafka, Die Zürauer Aphorismen, entstanden 1917-1918, publiziert von Max Brod unter dem Titel "Betrachtungen über Sünde, Hoffnung, Leid und den wahren Weg" veröffentlicht 1931 </p></div>`,
   `Das Schuldgefühl ist eine – normalerweise als negativ wahrgenommene – soziale Emotion, welche bewusst oder unbewusst einer (auch: vermeintlichen) Fehlreaktion, Pflichtverletzung oder Missetat folgen kann.<br> Mögliche körperliche Reaktionen (Erröten, Schwitzen, eventuell sogar depressive Verstimmung, Fieber oder Magenverstimmung) sind vergleichbar mit denen der Scham oder Angst. Schuld, Scham und Verantwortungsgefühl können leicht verwechselt werden, d. h. die Abgrenzung im Erleben des Individuums ist häufig schwierig.<br> In der Fachliteratur wird Scham von Schuld mittels der Bewertungsgrundlage des Verhaltens abgegrenzt: Während Schuld nach Michael Lewis (2000) durch eine negative Bewertung eines spezifischen Verhaltens erzeugt wird („ich habe etwas Falsches getan“), wird Scham durch eine negative Bewertung des Selbsts erzeugt („ich bin ein schlechter Mensch“). <br><br>Quelle: Wikipedia`,
 
   `<img
